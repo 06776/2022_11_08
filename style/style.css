@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Raleway:ital,wght@0,700;1,400&family=Roboto:ital,wght@0,400;0,700;1,300&display=swap");
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -5,85 +7,90 @@
   list-style-type: none;
 }
 
+html {
+  font-size: 14px;
+}
+
 body {
   font-family: "Roboto", sans-serif;
-  background: #bac5dd;
-  background-size: cover;
+  background-color: #bac5dd;
 }
 
 #container {
-  max-width: 1200px;
-  max-height: 1000px;
-  margin: 150px auto;
-  box-shadow: 0 0 200px rgba(255, 255, 255, 0.5);
+  max-width: 1300px;
+  width: 95%;
+  margin: 0 auto;
 }
 
 #header {
-  background: url("../img/picture1.jpg");
-  height: 360px;
-  position: relative;
+  background: url("../img/picture1.jpg") center center;
+  background-size: cover;
+  height: 580px;
 }
 
 #header h1 {
-  margin-bottom: 80px;
-  margin-top: 80px;
-}
-
-#header #nav {
-  background-color: #5473b4;
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-}
-
-#nav > ul > li {
-  float: left;
-}
-
-#nav .has-submenu {
-  position: relative;
-}
-
-#nav .has-submenu:hover .submenu {
-  display: block;
-}
-
-#nav .has-submenu::after {
-  content: "🢓";
+  font-size: 4rem;
+  padding: 300px 0 0 400px;
   color: white;
-  position: absolute;
-  top: 24px;
-  right: 10px;
+}
+nav {
 }
 
-#nav .has-submenu > a {
-  padding-right: 35px;
-}
-
-#nav .submenu {
-  position: absolute;
-  left: 0;
+#nav ul {
   background-color: #5473b4;
-  width: 220px;
-  display: none;
 }
 
 #nav ul::after,
-#nav::after {
+main .content::after {
   content: "";
   clear: both;
   display: table;
 }
 
-#header ul li a {
-  padding: 20px;
-  text-decoration: none;
-  color: white;
-  display: block;
+#nav ul li {
+  width: 19.9999%;
+  text-align: center;
+  float: left;
 }
 
-#content {
-  background: white;
-  padding: 40px;
+#nav ul li a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 40px 0;
+  display: block;
+  width: 100%;
+}
+
+#nav ul li a:hover {
+  color: black;
+  font-size: bold;
+}
+
+main .content {
+  background: #ddd;
+  color: #735640;
+}
+main .content p {
+  padding: 15px 10px;
+  line-height: 2;
+  font-size: 0.8rem;
+  text-align: justify;
+}
+
+main .content .left {
+  width: 49.9999%;
+  float: left;
+}
+
+main .content .right {
+  width: 49.9999%;
+  float: right;
+}
+
+footer {
+  padding: 80px;
+  background-color: white;
+  color: #735640;
+  text-align: center;
 }
