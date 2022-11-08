@@ -1,6 +1,89 @@
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: #bac5dd;
+  background-size: cover;
+}
+
+#container {
+  max-width: 1200px;
+  max-height: 1000px;
+  margin: 150px auto;
+  box-shadow: 0 0 200px rgba(255, 255, 255, 0.5);
+}
+
+#header {
+  background: url("../img/picture1.jpg");
+  height: 360px;
+  position: relative;
+}
+
+#header h1 {
+  margin-bottom: 80px;
+  margin-top: 80px;
+}
+
+#header #nav {
+  background-color: #5473b4;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+#nav > ul > li {
+  float: left;
+}
+
+#nav .has-submenu {
+  position: relative;
+}
+
+#nav .has-submenu:hover .submenu {
+  display: block;
+}
+
+#nav .has-submenu::after {
+  content: "🢓";
+  color: white;
+  position: absolute;
+  top: 24px;
+  right: 10px;
+}
+
+#nav .has-submenu > a {
+  padding-right: 35px;
+}
+
+#nav .submenu {
+  position: absolute;
+  left: 0;
+  background-color: #5473b4;
+  width: 220px;
+  display: none;
+}
+
+#nav ul::after,
+#nav::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+#header ul li a {
+  padding: 20px;
+  text-decoration: none;
+  color: white;
+  display: block;
+}
+
+#content {
+  background: white;
+  padding: 40px;
 }
