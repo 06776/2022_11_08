@@ -1,0 +1,3 @@
+body bg #bac5dd
+nav bg #5473b4
+text #ddd
